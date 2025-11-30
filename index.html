@@ -3,103 +3,355 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ayush Raj| Portfolio</title>
+  <title>Ayush Raj | Full-Stack Software Engineer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="navbar">
-    <div class="logo">Ayush Raj</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <canvas id="particles-canvas"></canvas>
+
+  <nav class="navbar">
+    <div class="logo">Ayush<span class="dot">.</span>dev</div>
+    <div class="nav-links">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projects" class="nav-link">Work</a>
+      <a href="#contact" class="nav-btn-glow">Let's Talk</a>
+    </div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+  </nav>
 
   <section id="home" class="hero">
     <div class="hero-content">
-      <img src="profilepic.jpg" alt="Profile Picture" class="profile-pic" />
-      <h1>Hello, I'm <span>Ayush Raj</span></h1>
-      <p>A Passionate full-stack Developer</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </section>
-
-  <section id="about" class="section reveal">
-    <h2>About Me</h2>
-    <p>Hello! I’m Ayush Raj, a passionate and detail-oriented Computer Science undergraduate with a strong interest in full-stack web development, app development, and tech innovation. I enjoy building intuitive, responsive, and functional digital experiences that solve real-world problems.
-
-Over the past year, I’ve gained hands-on experience in frontend development, backend integration, and project deployment by working on personal and freelance projects, including a fully-functional e-commerce platform named Levoe, and a gamified educational website called Justice Junction. I’ve also contributed to the Uttaranchal University E-sports Club as a content creator and worked as a Business Management Intern at Younity.
-
-In 2024, I was proud to rank 5th in IIT Bombay’s Eureka Hackathon, where I collaborated on building impactful digital solutions under pressure.
-
-I believe in continuous learning and am always exploring new technologies, tools, and frameworks. Currently, I'm honing my backend development skills and diving deeper into cloud deployment, Firebase, MongoDB, and Razorpay integrations. I'm also working on launching my faceless tech YouTube channel – Tech Walt, focused on honest reviews and tutorials.</p><br>
-<h2>🎯 Goals</h2>
-<p>My long-term goal is to work at Google or a top tech company, where I can contribute to impactful projects, collaborate with brilliant minds, and grow as a software engineer. I’m also driven by a desire to create educational platforms and tools that make tech learning more accessible and fun.
-
-Thank you for visiting my portfolio — I’m excited about what’s next, and I’d love to connect!</p>
-  </section>
-
-  <section id="skills" class="section reveal">
-    <h2>Skills</h2>
-    <div class="skill-grid">
-      <div class="skill-grid">HTML</div><div class="skill-grid">CSS</div><div class="skill-grid">JavaScript</div>
-      <div class="skill-grid">React</div><div class="skill-grid">Git</div><div class="skill-grid">Firebase</div>
-    </div>
-  </section>
-
-  <section id="projects" class="section reveal">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Responsive and interactive portfolio with animations and glassmorphism UI.</p>
+      <div class="profile-wrapper">
+        <div class="profile-glow"></div>
+        <img src="profilepic.jpg" alt="Ayush Raj" class="profile-pic" />
       </div>
-      <div class="project-card">
-        <h3><a style="color: white;" href="https://levoe.kesug.com" target="_blank"> E-commerce Platform</a></h3>
-        <p>Online shopping website with product cart and checkout using Razorpay.</p>
+      
+      <div class="badge fade-up">
+        <span class="pulse"></span> Open to Opportunities
       </div>
-      <div class="project-card">
-        <h3><a style="color: white;" href="https://justice-junction-mkvc.vercel.app/" target="_blank"> A gamified educational website</a></h3>
-        <p> A Gamified Eductional Website Called Justice Junction . Made For The Studentes Who Are Intrested In LAW And INDIAN CONSTITUTION</p>
+      
+      <h1 class="fade-up delay-1">
+        Engineering <span class="gradient-text">Scalable</span><br>
+        <span class="gradient-text">Digital Solutions</span>
+      </h1>
+      
+      <div class="typing-container fade-up delay-2">
+        <span class="txt-static">Specializing in </span>
+        <span class="txt-type" data-wait="2000" data-words='["MERN Stack Architecture", "Interactive UI/UX", "Cloud Integration"]'></span>
+      </div>
+      
+      <div class="hero-btns fade-up delay-3">
+        <a href="#projects" class="btn btn-primary">View Selected Work <i class="fas fa-arrow-right"></i></a>
+        <a href="https://github.com/Ayush2621/" target="_blank" class="btn btn-glass"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>
+    
+    <a href="#about" class="scroll-mouse"><div class="mouse-wheel"></div></a>
   </section>
 
-  <section id="certificates" class="section reveal">
-    <h2>Certificates</h2>
-    <div class="cert-grid">
-      <img src="certificate9.jpg" alt="Certificate 1" class="cert-img">
-      <img src="certificate8.jpg" alt="Certificate 2" class="cert-img">
-      <img src="certificate2.jpg" alt="Certificate 4" class="cert-img">
-      <img src="certificate7.jpg" alt="Certificate 3" class="cert-img">
-       <img src="certificate6.jpg" alt="Certificate 3" class="cert-img">
-        <img src="certificate5.jpg" alt="Certificate 3" class="cert-img">
-         <img src="certificate1.jpg" alt="Certificate 3" class="cert-img">
-          <img src="certificate4.jpg" alt="Certificate 3" class="cert-img">
-           <img src="certificate3.jpg" alt="Certificate 3" class="cert-img">
+  <div class="marquee-strip">
+    <div class="marquee-content">
+       <span>REACT</span> <i class="fas fa-circle separator"></i>
+       <span>NODE.JS</span> <i class="fas fa-circle separator"></i>
+       <span>MONGODB</span> <i class="fas fa-circle separator"></i>
+       <span>EXPRESS</span> <i class="fas fa-circle separator"></i>
+       <span>FIREBASE</span> <i class="fas fa-circle separator"></i>
+       <span>AWS</span> <i class="fas fa-circle separator"></i>
+       <span>DOCKER</span> <i class="fas fa-circle separator"></i>
+       <span>REACT</span> <i class="fas fa-circle separator"></i>
+       <span>NODE.JS</span> <i class="fas fa-circle separator"></i>
+       <span>MONGODB</span> <i class="fas fa-circle separator"></i>
+    </div>
+  </div>
+
+  <section id="about" class="section">
+    <div class="section-header reveal">
+        <span class="section-subtitle">MY STORY</span>
+        <h2>About <span class="highlight">Me</span></h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="bento-grid">
+        <div class="bento-box bio-box reveal">
+            <div class="icon-box"><i class="fas fa-user-astronaut"></i></div>
+            <h3>The Developer Profile</h3>
+            <p>I am <span class="text-white">Ayush Raj</span>, a Computer Science undergraduate at Uttaranchal University. I bridge the gap between complex backend logic and beautiful frontend design.</p>
+            <p style="margin-top: 15px;">I combine technical expertise in the <strong>MERN Stack</strong> with a creative eye for design, ensuring that every project I ship is both performant and visually engaging.</p>
+        </div>
+
+        <div class="bento-box achievement-box reveal delay-1">
+            <i class="fas fa-trophy trophy-icon"></i>
+            <div class="rank-number">#5</div>
+            <p>Ranked 5th at<br><strong>IIT Bombay Eureka</strong><br>Hackathon 2024</p>
+        </div>
+
+        <div class="bento-box edu-box reveal delay-2">
+            <div class="icon-box"><i class="fas fa-university"></i></div>
+            <h3>Education</h3>
+            <p class="univ">Uttaranchal University</p>
+            <p class="deg">B.Tech Computer Science</p>
+            <div class="badge-sm">Dean's List</div>
+        </div>
+
+        <div class="bento-box stats-box reveal delay-1">
+             <div class="stat-item">
+                 <h3>05+</h3> <p>Live Projects</p>
+             </div>
+             <div class="stat-item">
+                 <h3>500+</h3> <p>Commits</p>
+             </div>
+             <div class="stat-item">
+                 <h3>2025</h3> <p>Graduation</p>
+             </div>
+        </div>
     </div>
   </section>
 
-  <section id="contact" class="section reveal">
-    <h2>Contact</h2>
-  <p><a style="color: silver;" href="mailto:ayushmishra2622@gmail.com" target="_blank"> ayushmishra2622@gmail.com</a></p>
-    <p><a style="color: silver;" href="https://github.com/Ayush2621/" target="_blank">GitHub</a></p>
-    <a style="color: silver;" href="https://linkedin.com/in/ayush-raj-79401231a?utm" target="_blank">LinkedIn</a></p>
+  <section id="services" class="section">
+    <div class="section-header reveal">
+        <span class="section-subtitle">WHAT I OFFER</span>
+        <h2>My <span class="highlight">Services</span></h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="services-grid">
+        <div class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-code"></i></div>
+            <h3>Frontend Development</h3>
+            <p>Building responsive, pixel-perfect user interfaces using React, Tailwind CSS, and modern JavaScript frameworks.</p>
+            <ul class="service-list">
+                <li><i class="fas fa-check"></i> SPA Development</li>
+                <li><i class="fas fa-check"></i> Interactive Animations</li>
+                <li><i class="fas fa-check"></i> Mobile-First Design</li>
+            </ul>
+        </div>
+
+        <div class="service-card reveal delay-1">
+            <div class="service-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend Engineering</h3>
+            <p>Architecting secure and scalable server-side systems using Node.js, Express, and managing databases like MongoDB.</p>
+            <ul class="service-list">
+                <li><i class="fas fa-check"></i> REST API Design</li>
+                <li><i class="fas fa-check"></i> Database Management</li>
+                <li><i class="fas fa-check"></i> Authentication (JWT/OAuth)</li>
+            </ul>
+        </div>
+
+        <div class="service-card reveal delay-2">
+            <div class="service-icon"><i class="fas fa-rocket"></i></div>
+            <h3>Full-Stack Solutions</h3>
+            <p>End-to-end development from concept to deployment, ensuring seamless integration between client and server.</p>
+            <ul class="service-list">
+                <li><i class="fas fa-check"></i> MERN Stack Integration</li>
+                <li><i class="fas fa-check"></i> Payment Gateway Setup</li>
+                <li><i class="fas fa-check"></i> Cloud Deployment</li>
+            </ul>
+        </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Ayush Raj. All rights reserved.</p>
+  <section id="process" class="section">
+      <div class="section-header reveal">
+        <span class="section-subtitle">HOW I WORK</span>
+        <h2>My <span class="highlight">Process</span></h2>
+        <div class="line"></div>
+      </div>
+      
+      <div class="process-steps">
+          <div class="step reveal">
+              <div class="step-number">01</div>
+              <h3>Research</h3>
+              <p>Analyzing requirements and understanding the core problem to solve.</p>
+          </div>
+          <div class="step reveal delay-1">
+              <div class="step-number">02</div>
+              <h3>Design</h3>
+              <p>Creating wireframes and architectural blueprints for the system.</p>
+          </div>
+          <div class="step reveal delay-2">
+              <div class="step-number">03</div>
+              <h3>Build</h3>
+              <p>Writing clean, efficient code and integrating frontend with backend.</p>
+          </div>
+          <div class="step reveal delay-3">
+              <div class="step-number">04</div>
+              <h3>Deploy</h3>
+              <p>Testing, optimizing, and launching the application to the cloud.</p>
+          </div>
+      </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="section-header reveal">
+        <span class="section-subtitle">MY TOOLS</span>
+        <h2>Tech <span class="highlight">Ecosystem</span></h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="skills-wrapper">
+        <div class="skill-card reveal">
+            <div class="skill-header"><i class="fab fa-react"></i> <h3>Frontend</h3></div>
+            <div class="skill-tags">
+                <span>React.js</span><span>JavaScript (ES6+)</span>
+                <span>HTML5</span><span>CSS3</span><span>Tailwind</span>
+                <span>Framer Motion</span>
+            </div>
+        </div>
+        <div class="skill-card reveal delay-1">
+            <div class="skill-header"><i class="fas fa-server"></i> <h3>Backend</h3></div>
+            <div class="skill-tags">
+                <span>Node.js</span><span>Express</span>
+                <span>MongoDB</span><span>Firebase</span>
+                <span>REST API</span>
+            </div>
+        </div>
+        <div class="skill-card reveal delay-2">
+            <div class="skill-header"><i class="fas fa-tools"></i> <h3>DevOps & Tools</h3></div>
+            <div class="skill-tags">
+                <span>Git/GitHub</span><span>VS Code</span>
+                <span>Postman</span><span>Vercel</span>
+                <span>Linux Basics</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-header reveal">
+        <span class="section-subtitle">PORTFOLIO</span>
+        <h2>Featured <span class="highlight">Projects</span></h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="projects-grid">
+        <div class="tilt-card reveal">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #FF6B6B, #556270);"></div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <span class="folder-icon"><i class="fas fa-folder-open"></i></span>
+                            <div class="project-links">
+                                <a href="https://levoe.kesug.com" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>Levoe E-Commerce</h3>
+                        <p>A full-stack online shopping platform featuring secure Razorpay payments, user authentication, and real-time cart management.</p>
+                        <div class="tech-stack-list">
+                            <span>React</span><span>Node.js</span><span>Firebase</span><span>Razorpay</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tilt-card reveal delay-1">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #00c6ff, #0072ff);"></div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <span class="folder-icon"><i class="fas fa-balance-scale"></i></span>
+                            <div class="project-links">
+                                <a href="https://justice-junction-mkvc.vercel.app/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>Justice Junction</h3>
+                        <p>An award-winning gamified educational platform designed to make learning the Indian Constitution accessible and engaging.</p>
+                        <div class="tech-stack-list">
+                            <span>Gamification</span><span>EdTech</span><span>React</span><span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tilt-card reveal delay-2">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #11998e, #38ef7d);"></div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <span class="folder-icon"><i class="fas fa-code"></i></span>
+                            <div class="project-links">
+                                <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Pro Portfolio</h3>
+                        <p>This high-performance website. Built with advanced Canvas particle networks, 3D tilt effects, and glassmorphism UI.</p>
+                        <div class="tech-stack-list">
+                            <span>HTML5</span><span>CSS3</span><span>JS</span><span>Canvas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="section">
+      <div class="section-header reveal">
+        <span class="section-subtitle">CREDENTIALS</span>
+        <h2>Certifications</h2>
+        <div class="line"></div>
+      </div>
+      <div class="cert-grid">
+          <div class="cert-frame reveal"><img src="certificate9.jpg" alt="Cert"></div>
+          <div class="cert-frame reveal"><img src="certificate8.jpg" alt="Cert"></div>
+          <div class="cert-frame reveal"><img src="certificate2.jpg" alt="Cert"></div>
+          <div class="cert-frame reveal"><img src="certificate7.jpg" alt="Cert"></div>
+          <div class="cert-frame reveal"><img src="certificate6.jpg" alt="Cert"></div>
+          <div class="cert-frame reveal"><img src="certificate5.jpg" alt="Cert"></div>
+      </div>
+  </section>
+
+  <section id="contact" class="section">
+      <div class="contact-box reveal">
+          <div class="glow-backdrop"></div>
+          <h2>Ready to start a project?</h2>
+          <p>I am currently available for freelance projects and internships.</p>
+          <a href="mailto:ayushmishra2622@gmail.com" class="btn btn-primary big-btn">Say Hello <i class="fas fa-paper-plane"></i></a>
+      </div>
+  </section>
+
+  <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-col">
+              <h3>Ayush<span class="dot">.</span>dev</h3>
+              <p>Building digital experiences that matter. Focused on clean code and user-centric design.good coder</p>
+          </div>
+          <div class="footer-col">
+              <h4>Quick Links</h4>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#projects">Work</a>
+              <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+              <h4>Connect</h4>
+              <a href="https://github.com/Ayush2621/" target="_blank">GitHub</a>
+              <a href="https://linkedin.com/in/ayush-raj-79401231a" target="_blank">LinkedIn</a>
+              <a href="mailto:ayushmishra2622@gmail.com">Email Me</a>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2025 Ayush Raj. All rights reserved.</p>
+      </div>
   </footer>
 
-  <!-- Lightbox Modal -->
   <div id="lightbox" class="lightbox">
-    <img id="lightbox-img" src="" alt="Certificate" />
+      <span class="close-lightbox">&times;</span>
+      <img id="lightbox-img" src="" alt="Certificate">
   </div>
 
   <script src="script.js"></script>
